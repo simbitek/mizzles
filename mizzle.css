@@ -1,0 +1,182 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    height: 100vh;
+    padding-top: 128px;
+
+}
+
+.container {
+    height: 100vh;
+}
+
+footer {
+    position: fixed;
+    height: 15%;
+    width: 100%;
+    background-color: black;
+    bottom: 0;
+}
+#av_body{
+    display: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    height: 75%;
+    /* padding-left: 12px;
+    padding-right: 12px; */
+}
+
+.col-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-9 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-12 {
+    width: 100%;
+    background-color: red;
+}
+
+#title {
+    height: 10%;
+    background-color: gray;
+   
+}
+
+.checking-item{
+    list-style-type: none;
+}
+
+.nav {
+    margin: 0;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 64px;
+    align-items: start;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+ 
+}
+
+#sort-by{
+    width: 200px;
+    height: 30px;
+    float: right;
+    border-radius: 8px;
+    font-weight: 200;
+}
+
+.drop-content{
+    margin-top: 16px;
+}
+
+#on-stock{
+    width: 180px;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 10px;
+    padding-right: 8px;
+}
+
+.nav-list {
+    display: flex;
+    position: relative;
+    /* padding: 14px 16px; */
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.list-1{
+    width: 72px;
+    height: 48px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 2px;
+    color: black;
+    list-style-type: disc;
+}
+
+.list {
+    width: 72px;
+    height: 48px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 2px;
+    color: black;
+}
+
+.search-bar {
+    float: right;
+    padding-left: 8px;
+    width: 128px;
+}
+
+.main-box {
+    flex-direction: column;
+}
+
+.side {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.items-p {
+    display: flex;
+    float: right;
+    flex-wrap: wrap;
+    margin: 24px;
+}
+
+.classic {
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    border-color: #e1e1e1;
+    border-radius: 10px;
+    border-width: 0.1px;
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    /* flex-wrap: wrap; */
+}
+
+.badge-1 {
+    float: inline-start;
+    width: 72px;
+    height: 20px;
+    padding: 1px;
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+}
+
+.badge-2 {
+    float: inline-start;
+    width: 56px;
+    height: 20px;
+    padding: 1px;
+    color: white;
+    background-color: red;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+a.hover {
+    background-color: rgb(106, 216, 106);
+}

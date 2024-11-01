@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mizzle</title>
+    <link rel="stylesheet" href="mizzle.css">
+</head>
+
+<body>
+    <!-- Todo make header fixed -->
+    <header>
+
+        <div class="nav">
+            <img src="mizzle_images/logo.svg" width="168px" height="56px">
+            <!-- <h1 style="text-align: left;">Mizzle</h1> -->
+            <div class="nav-list">
+                <a href="#" class="list">Demo</a>
+                <a href="#" class="list">Pages</a>
+                <a href="#" class="list">Portfolio</a>
+                <a href="#" class="list">Contact us</a>
+            </div>
+            <div>
+                <input placeholder="Search" icon=""
+                    style="font-size: 24px; font-weight: bold; color: black; padding-left: 25px; margin-top: 20px;" />
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div id="title" class="col-12" style="background-color: yellow;">
+
+            <div>
+                <a href="#" class="list-1">Home</a>
+                <a href="#" class="list-1">Shop</a>
+                <a href="#" class="list-1">All product</a>
+            </div>
+            <h1>Search Items</h1>
+        </div>
+
+
+        <div class="row">
+
+
+            <div id="side-menu" class="col-3" style="background-color: yellow; height: 100%; width: 25%;">
+                <div class="side">
+                    <!-- <div class="dropdown">
+
+                        <div class="drop-content">
+                            <select name="new" id="on-stock">
+                                <option value="available">Availability</option>
+                                <option value="all">All</option>
+                                <option value="new_stock">New </option>
+                                <option value="on_stock">On Stock Only</option>
+                            </select>
+                        </div>
+                    </div> -->
+
+                    <div id="availability" class="dropdown">
+                        <div id="av_title">
+                            <h1>Availability</h1>
+                        </div>
+
+                        <div id="av_body" class="drop-content">
+                            <ul class="checking-item">
+                                <li>
+                                    <label class="check-item">
+                                        <input type="checkbox" name="stock" value="" /> All
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="check-item">
+                                        <input type="checkbox" name="stock" value="" /> New Stock
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="check-item">
+                                        <input type="checkbox" name="stock" value="" />On Stock Only
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div id="av_title"><h2>Categories</h2></div>
+                        
+                        <div id="av_body">
+                           
+                            <ul class="checking-item">
+                                <li>
+                                    <label class="check-item">
+                                        <input type="checkbox" name="price" value="grocery" /> Grocery(41)
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="check-item">
+                                        <input type="checkbox" name="price" value="electronics" /> Electronics (142)
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="check-item">
+                                        <input type="checkbox" name="price" value="games" /> Games (25)
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="check-item">
+                                        <input type="checkbox" name="price" value="books" /> Books (81)
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="check-item">
+                                        <input type="checkbox" name="price" value="mobile" /> Mobile (354)
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="check-item">
+                                        <input type="checkbox" name="price" value="bags" /> Bags (41)
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="check-item">
+                                        <input type="checkbox" name="price" value="beuty" /> Beauty products (35)
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="check-item">
+                                        <input type="checkbox" name="price" value="fashion" /> Fashion (215)
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Price</h2>
+                        <div>
+                            <ul class="checking-item">
+                                <li>
+                                    <label class="check-item">
+                                        <input type="checkbox" name="price" value="red" /> $0 to $200
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="check-item">
+                                        <input type="checkbox" name="price" value="red" /> $200 to $500
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="check-item">
+                                        <input type="checkbox" name="price" value="" /> $500 to $1500
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="check-item">
+                                        <input type="checkbox" name="price" value="" /> $1500 to more
+                                    </label>
+                                </li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Rating star</h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="content" class="col-9" style="background-color: green; height: 100%; width: 75%;">
+
+                <div id="product-search">
+                    <div>
+                        <input placeholder="Search products by name or keyword..."
+                            style="height: 30px; width: 256px; "></input>
+                    </div>
+                    <select name="sort" id="sort-by">
+                        <option value="sort_by">Sort By</option>
+                        <option value="name">Name</option>
+                        <option value="low_price">Low to High Price</option>
+                        <option value="high_price">High to Low Price</option>
+                    </select>
+                    <!-- <button>Show Filter</button> -->
+                </div>
+                <div class="items-p">
+                    <div class="classic">
+                        <div class="badge-1">Featured</div>
+                        <img src="mizzle_images/02.png" width="200" height="200">
+                        <a href="checkout.html" style="font-size: 24px;">Classic round neck t-shirt</a>
+                        <h1 style="color: rgb(107, 167, 107);">$103.00</h1>
+                    </div>
+                    <div class="classic">
+                        <div class="badge-2">20% off</div>
+                        <img src="mizzle_images/menshoes.png" width="200" height="200">
+                        <a href="checkout.html" style="font-size: 24px;">
+                            Man's training shoes
+                        </a>
+                        <h1 style="color: rgb(107, 167, 107);">$180.00</h1>
+                    </div>
+                    <div class="classic">
+                        <img src="mizzle_images/bottle.png" width="200" height="200">
+                        <a href="checkout.html" style="font-size: 24px;">Premium stainless steel bottle</a>
+                        <h1 style="color: rgb(107, 167, 107);">$40.00</h1>
+                    </div>
+                    <div class="classic">
+                        <div class="badge-2">30% off</div>
+                        <img src="mizzle_images/hphones.png" width="200" height="200">
+                        <a href="checkout.html" style="font-size: 24px;">High perfomance headphones with noise
+                            cancellation</a>
+                        <h1 style="color: rgb(107, 167, 107);">$150.00</h1>
+                    </div>
+                    <div class="classic">
+                        <img src="mizzle_images/smartphone.png" width="200" height="200">
+                        <a href="checkout.html" style="font-size: 24px;">The ultimate smartphone for modern
+                            lifestyles</a>
+                        <h1 style="color: rgb(107, 167, 107);">$215.00</h1>
+                    </div>
+                    <div class="classic">
+                        <img src="mizzle_images/radio.png" width="200" height="200">
+                        <a href="checkout.html" style="font-size: 24px;">Vintage inspired bluetooth radio speaker</a>
+                        <h1 style="color: rgb(107, 167, 107);">$142.00</h1>
+                    </div>
+                    <div class="classic">
+                        <img src="mizzle_images/shoes.png" width="200" height="200">
+                        <a href="checkout.html" style="font-size: 24px;">Women's training shoes</a>
+                        <h1 style="color: rgb(107, 167, 107);">$215.00</h1>
+                    </div>
+                    <div class="classic">
+                        <img src="mizzle_images/cap.png" width="200" height="200">
+                        <a href="checkout.html" style="font-size: 24px;">Premium cotton baseball cap</a>
+                        <h1 style="color: rgb(107, 167, 107);">$98.00</h1>
+                    </div>
+                    <div class="classic">
+                        <img src="mizzle_images/airmax.png" width="200" height="200">
+                        <a href="checkout.html" style="font-size: 24px;">Air Max pulse roam</a>
+                        <h1 style="color: rgb(107, 167, 107);">$142.00</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- </div> -->
+    </main>
+
+    <footer>
+        <div id="footer"> </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
